@@ -4,8 +4,8 @@ import BookCard from "../BookCard/BookCard.js"
 const BookList = (props) => {
     try {
         return (
-            <div className="container mt-4">
-                <div className="row justify-content-center">
+            <div className="container mx-auto mt-10 mb-20">
+                <div className="flex flex-row flex-wrap gap-8 justify-center items-center">
                     {
                         props.books.map((book, i) => {
                             return <BookCard
@@ -19,13 +19,14 @@ const BookList = (props) => {
                             />
                         })
                     }
-                </div></div>
+                </div>
+            </div>
         )
     }
     catch{
         return (
-            <div className="container mt-4">
-                <div className="row justify-content-center">
+            <div className="container mx-auto mt-10 mb-20">
+                <div className="flex flex-row flex-wrap gap-8  justify-center items-center">
                     {
                         props.books.map((book, i) => {
                             return <BookCard
@@ -38,7 +39,8 @@ const BookList = (props) => {
                             />
                         })
                     }
-                </div></div>
+                </div>
+            </div>
         )
     }
 
