@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import SearchBar from "../SearchBar/SearchBar.js";
 import BookList from "../BookList/BookList.js";
 import request from "superagent";
-import "./style.css"
-
 
 class BookSearch extends Component {
     constructor(props){
