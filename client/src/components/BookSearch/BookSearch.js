@@ -25,6 +25,11 @@ class BookSearch extends Component {
         })
     }
 
+    handleSearch = (event) => {
+        this.setState({ searchField: event.target.value})
+        console.log(event.target.value)
+    }
+
     render() {
       return (
         <div id="container">
